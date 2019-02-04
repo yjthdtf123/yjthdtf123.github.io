@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,12 +80,12 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="日积硅步，以行千里">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
+<meta property="og:site_name" content="日积硅步，以行千里">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="日积硅步，以行千里">
 
 
 
@@ -93,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -101,7 +101,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -121,7 +121,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>日积硅步，以行千里</title>
   
 
 
@@ -133,7 +133,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -152,7 +152,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">日积硅步，以行千里</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -182,7 +182,37 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            Home
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
           </a>
         </li>
       
@@ -192,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            Archives
+            归档
           </a>
         </li>
       
@@ -232,13 +262,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/04/markdown学习笔记/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="人间很值得">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="日积硅步，以行千里">
     </span>
 
     
@@ -258,9 +288,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-04T13:51:59+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-04T13:51:59+08:00">
                 2019-02-04
               </time>
             
@@ -300,204 +330,18 @@
       
         
           
-            <h1 id="什么是markdown"><a href="#什么是markdown" class="headerlink" title="什么是markdown"></a>什么是markdown</h1><blockquote>
-<p>Markdwon 是一种轻量级标记语言，它以纯文本形式（易读、易写、易更改）编写文档，并最终以HTLM格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。</p>
-</blockquote>
-<h1 id="markdown-语法"><a href="#markdown-语法" class="headerlink" title="markdown 语法"></a>markdown 语法</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>在markdown中想要设置标题，则在标题的文字前添加#，一个#代表一级标题，两个# 代表二级标题，以此类推，只支持到六级标题即######，七个#号以上就是一段普通的文本。</p>
-<p>示例：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br><span class="line"><span class="section">####### 七级标题</span></span><br></pre></td></tr></table></figure></p>
-<p>效果如下：</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>####### 七级标题</p>
-<p>从上面效果可以看出7个#号并没有形成标题 而只是一段普通文本。</p>
-<p>注意：严谨的来说，设置标题时，#后边一般要加上空格。有的编辑器不加#这个符号也可以，但是最好全部加上空格，这样是最安全的。</p>
-<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><p>markdown中可以对字体进行强调，如加粗，斜体，斜体加粗，删除线等。</p>
-<ul>
-<li>加粗</li>
-</ul>
-<p>要加粗的文字左右两端用**号包裹住</p>
-<ul>
-<li>斜体</li>
-</ul>
-<p>要倾斜的文字左右两端用*号包裹</p>
-<ul>
-<li><p>斜体加粗<br>要倾斜加粗的文字左右两端用***号包裹</p>
-</li>
-<li><p>删除线<br>要加删除线的文字左右两端用~~号包裹</p>
-</li>
-</ul>
-<p>示例：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**这是要加粗的文字**</span></span><br><span class="line"><span class="emphasis">*这是要倾斜的文字*</span></span><br><span class="line"><span class="strong">***这是要加粗并倾斜的文字**</span>*</span><br><span class="line">~~这是要加删除线的文字~~</span><br></pre></td></tr></table></figure></p>
-<p>效果：<br><strong>这是要加粗的文字</strong></p>
-<p><em>这是要倾斜的文字</em></p>
-<p><strong><em>这是要加粗并倾斜的文字</em></strong></p>
-<p><del>这是要加删除线的文字</del></p>
-<h2 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h2><p>在引用的文字前加&gt;即可。 引用可以嵌套，如两个&gt;&gt; 三个&gt;&gt;&gt;</p>
-<p>示例：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 引用1</span></span><br><span class="line">&gt;&gt; 引用2</span><br><span class="line">&gt;&gt;&gt; 引用3</span><br><span class="line">&gt;&gt;&gt;&gt; 引用4</span><br><span class="line">&gt;&gt;&gt;&gt;&gt; 引用5</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 引用n</span><br></pre></td></tr></table></figure></p>
-<p>效果如下：</p>
-<blockquote>
-<p>引用1</p>
-<blockquote>
-<p>引用2</p>
-<blockquote>
-<p>引用3</p>
-<blockquote>
-<p>引用4</p>
-<blockquote>
-<p>引用5</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>引用n</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="4-分割线"><a href="#4-分割线" class="headerlink" title="4.分割线"></a>4.分割线</h2><p>当要使用分割线时，可以用三个或三个以上的-或者*都可以实现<br>实例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">****</span><br></pre></td></tr></table></figure></p>
-<p>效果如下：</p>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h2><p>要在markdown中插入图片，使用[图片alt][图片地址 “图片title”]</p>
-<p>语法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure></p>
-<p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![区块链](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg &quot;区块链&quot;)</span><br></pre></td></tr></table></figure>
-<p>效果如下：<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="区块链" title="区块链"></p>
-<h2 id="6-超链接"><a href="#6-超链接" class="headerlink" title="6. 超链接"></a>6. 超链接</h2><p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 &quot;超链接title&quot;)</span><br><span class="line">title 可加可不加</span><br></pre></td></tr></table></figure></p>
-<p>示例：</p>
-<p><a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
-<p><a href="https://github.com" target="_blank" rel="noopener">github</a></p>
-<p>在markdown中也可以使用html标签中的a来添加一个超链接，如：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://www.baidu.com"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>百度<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>效果和<a href="超链接地址">超链接名</a> 这种语法是一样的，效果如下：</p>
-<p><a href="https://www.baidu.com" target="_blank">百度</a></p>
-<h2 id="7-列表"><a href="#7-列表" class="headerlink" title="7. 列表"></a>7. 列表</h2><ul>
-<li><strong>无序列表</strong></li>
-</ul>
-<p>语法：</p>
-<p>无序列表在文字前使用- + * 任何一种都可以表示一个无序列表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line"></span><br><span class="line">注意：列表中的 - + * 后面都要有一个空格 这样才是一个无序列表</span><br></pre></td></tr></table></figure></p>
-<p>效果如下：</p>
-<ul>
-<li>列表内容</li>
-</ul>
-<ul>
-<li>列表内容</li>
-</ul>
-<ul>
-<li>列表内容</li>
-</ul>
-<ul>
-<li><strong>有序列表</strong></li>
-</ul>
-<p>语法:</p>
-<p>数字加点.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 第一章</span><br><span class="line">2. 第二章</span><br><span class="line">3. 第三章</span><br><span class="line"></span><br><span class="line">注意：序号和内容之间要有空格隔开</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<ol>
-<li>第一章</li>
-<li>第二章</li>
-<li>第三章</li>
-</ol>
-<ul>
-<li><p><strong>列表嵌套</strong><br>无论是有序列表还是无序列表，都可以进行列表的嵌套，只需要在<strong>上一级和下一级之间敲一个tab键或者三个空格</strong></p>
-</li>
-<li><p>一级无序列表</p>
-<ul>
-<li>二级无序列表</li>
-<li>二级无序列表<ul>
-<li>三级无序列表</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>一级无序列表</p>
-<ol>
-<li>二级有序列表</li>
-<li>二级有序列表<ol>
-<li>三级有序列表<ul>
-<li>四级无序列表</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ul>
-<ol>
-<li>一级有序列表<ul>
-<li>二级无序列表</li>
-<li>二级无序列表<ol>
-<li>三级有序列表</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>二级有序列表<ol>
-<li>二级有序列表</li>
-<li>二级有序列表<ul>
-<li>三级无序列表</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a>8. 表格</h2><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">第二行的作用是分割表头和内容</span><br><span class="line">第二行中-符号有一个就可以了，为了对齐，多添加了几个，没有什么影响</span><br><span class="line">对齐方式：</span><br><span class="line">    在第二行-左右两端加上:,代表内容居中对齐</span><br><span class="line">    在第二行-左端加:,代表内容左对齐</span><br><span class="line">    在第二行-右端加:,代表内容右对齐</span><br><span class="line">如果不加:,那么内容默认向左对齐</span><br></pre></td></tr></table></figure>
-<p>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名  |  年龄  | 成绩  </span><br><span class="line">----:|:------:|:----</span><br><span class="line">张三  |   23   |  89</span><br><span class="line">小明  |   24   |  79</span><br><span class="line">莱恩  |   21   |  69</span><br></pre></td></tr></table></figure></p>
-<p>效果如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">姓名</th>
-<th style="text-align:center">年龄</th>
-<th style="text-align:left">成绩  </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">张三</td>
-<td style="text-align:center">23</td>
-<td style="text-align:left">89</td>
-</tr>
-<tr>
-<td style="text-align:right">小明</td>
-<td style="text-align:center">24</td>
-<td style="text-align:left">79</td>
-</tr>
-<tr>
-<td style="text-align:right">莱恩</td>
-<td style="text-align:center">21</td>
-<td style="text-align:left">69</td>
-</tr>
-</tbody>
-</table>
-<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9.代码"></a>9.代码</h2><p>在markdowm中插入其他语言的代码使用反引号`将代码包裹</p>
-<p>语法：</p>
-<p>单行代码: 代码的开始和结束部位用反引号`包裹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`代码内容`</span><br></pre></td></tr></table></figure>
-<p>代码块：代码之间用三个反引号包裹起来，并且两边的反引号单独占一行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(```)</span><br><span class="line">    代码内容</span><br><span class="line">    代码...</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
-<p>示例：</p>
-<p>单行代码： <code>int a = 10; System.out.println(&quot;hello world&quot;);</code></p>
-<p>代码块：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"hello world"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>注： 在使用代码块时，可以在开始的<code>`</code>后面加上某一个编程语言名称，代码块会自动对代码进行高亮显示，看起来更方便。</p>
-<p>例如要写一个java语言的代码块，那么开端就应该是<code>`</code>java，然后这个代码块中的java代码会自动的进行高亮显示。</p>
-<h2 id="10-流程图"><a href="#10-流程图" class="headerlink" title="10. 流程图"></a>10. 流程图</h2><p>目前使用的是vsCode编辑器，貌似对流程图的支持不是特别好，所以这一小节我暂时放下没有学习，等以后用到时再来回顾吧。</p>
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>这是我第一次使用markdown来写我的第一篇博客，本博客中的内容都是摘抄自简书上@高鸿祥的博客，十分感谢。 链接地址：<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">简书：Markdown基本语法</a></p>
+          什么是markdown
+Markdwon 是一种轻量级标记语言，它以纯文本形式（易读、易写、易更改）编写文档，并最终以HTLM格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。
 
-          
+markdown 语法1.标题在markdown中想要设置标题，则在标题
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/04/markdown学习笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -510,7 +354,14 @@
     
 
     
-
+	
+	<div>
+      
+	</div>
+	
+	<div>
+	  
+	</div>
     <footer class="post-footer">
       
 
@@ -547,13 +398,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/04/你好-Hexo/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="人间很值得">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="日积硅步，以行千里">
     </span>
 
     
@@ -573,9 +424,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-04T10:45:31+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-04T10:45:31+08:00">
                 2019-02-04
               </time>
             
@@ -615,8 +466,15 @@
       
         
           
-            <h1 id="你好，Hexo"><a href="#你好，Hexo" class="headerlink" title="你好，Hexo"></a>你好，Hexo</h1>
+          你好，Hexo
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/04/你好-Hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -629,7 +487,14 @@
     
 
     
-
+	
+	<div>
+      
+	</div>
+	
+	<div>
+	  
+	</div>
     <footer class="post-footer">
       
 
@@ -666,13 +531,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/03/hello-world/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="人间很值得">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="日积硅步，以行千里">
     </span>
 
     
@@ -692,9 +557,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-03T22:19:04+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-03T22:19:04+08:00">
                 2019-02-03
               </time>
             
@@ -734,17 +599,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/03/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -757,7 +620,14 @@
     
 
     
-
+	
+	<div>
+      
+	</div>
+	
+	<div>
+	  
+	</div>
     <footer class="post-footer">
       
 
@@ -813,7 +683,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">人间很值得</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -825,7 +695,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -836,10 +706,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">tags</span>
-                
+                  <span class="site-state-item-name">标签</span>
+                </a>
               </div>
             
 
@@ -878,13 +748,13 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">人间很值得</span>
 
   
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -892,7 +762,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -991,6 +861,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
