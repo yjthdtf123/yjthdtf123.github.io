@@ -1884,7 +1884,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7345b6;
+  background: #126bff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2811,14 +2811,14 @@ pre .javascript .function {
 }
 header {
   width: 90% !important;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 header.post-header {
   width: auto !important;
 }
 .container .main-inner {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 .content-wrap {
   width: calc(100% - 260px);
