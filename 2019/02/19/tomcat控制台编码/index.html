@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="problem,">
 
 
 
@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="启动Tomcat控制台出现中文乱码问题最近在学习Java Web中关于tomcat方面的知识，于是去apache官网上下载了一个tomcat8.5版本的，但是在使用tomcat时遇到启动后，控制台输出的日志信息里面有中文乱码，如图所示：  在网上查找了一下相关问题，发现是日志的配置文件中编码问题。 解决方法修改tomcat下的conf文件夹下的log.properties文件 打开log.prop">
+<meta name="keywords" content="problem">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://yjthdtf123.github.io/2019/02/04/hello-world/index.html">
+<meta property="og:title" content="tomcat控制台编码">
+<meta property="og:url" content="https://yjthdtf123.github.io/2019/02/19/tomcat控制台编码/index.html">
 <meta property="og:site_name" content="日积硅步，以行千里">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="启动Tomcat控制台出现中文乱码问题最近在学习Java Web中关于tomcat方面的知识，于是去apache官网上下载了一个tomcat8.5版本的，但是在使用tomcat时遇到启动后，控制台输出的日志信息里面有中文乱码，如图所示：  在网上查找了一下相关问题，发现是日志的配置文件中编码问题。 解决方法修改tomcat下的conf文件夹下的log.properties文件 打开log.prop">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-04T13:09:57.591Z">
+<meta property="og:image" content="https://yjthdtf123.github.io/images/tomcat_charset.png">
+<meta property="og:image" content="https://yjthdtf123.github.io/images/tomcat_gbk.png">
+<meta property="og:updated_time" content="2019-02-19T13:56:20.289Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="tomcat控制台编码">
+<meta name="twitter:description" content="启动Tomcat控制台出现中文乱码问题最近在学习Java Web中关于tomcat方面的知识，于是去apache官网上下载了一个tomcat8.5版本的，但是在使用tomcat时遇到启动后，控制台输出的日志信息里面有中文乱码，如图所示：  在网上查找了一下相关问题，发现是日志的配置文件中编码问题。 解决方法修改tomcat下的conf文件夹下的log.properties文件 打开log.prop">
+<meta name="twitter:image" content="https://yjthdtf123.github.io/images/tomcat_charset.png">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://yjthdtf123.github.io/2019/02/04/hello-world/">
+  <link rel="canonical" href="https://yjthdtf123.github.io/2019/02/19/tomcat控制台编码/">
 
 
 
 
 
-  <title>Hello World | 日积硅步，以行千里</title>
+  <title>tomcat控制台编码 | 日积硅步，以行千里</title>
   
 
 
@@ -262,7 +266,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yjthdtf123.github.io/2019/02/04/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://yjthdtf123.github.io/2019/02/19/tomcat控制台编码/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="人间很值得">
@@ -279,7 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">tomcat控制台编码</h1>
         
 
         <div class="post-meta">
@@ -291,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-04T21:09:57+08:00">
-                2019-02-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-19T21:24:17+08:00">
+                2019-02-19
               </time>
             
 
@@ -301,6 +305,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/tomcat/" itemprop="url" rel="index">
+                    <span itemprop="name">tomcat</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -329,15 +355,14 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="启动Tomcat控制台出现中文乱码"><a href="#启动Tomcat控制台出现中文乱码" class="headerlink" title="启动Tomcat控制台出现中文乱码"></a>启动Tomcat控制台出现中文乱码</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>最近在学习Java Web中关于tomcat方面的知识，于是去apache官网上下载了一个tomcat8.5版本的，但是在使用tomcat时遇到启动后，控制台输出的日志信息里面有中文乱码，如图所示：</p>
+<p><img src="/images/tomcat_charset.png" alt="乱码" title="控制台日志乱码"></p>
+<p>在网上查找了一下相关问题，发现是日志的配置文件中编码问题。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>修改tomcat下的conf文件夹下的log.properties文件</p>
+<p>打开log.properties文件，更改其中的一条属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">java.util.logging.ConsoleHandler.encoding = UTF-8</span><br><span class="line"># 替换成</span><br><span class="line">java.util.logging.ConsoleHandler.encoding = GBK</span><br></pre></td></tr></table></figure></p>
+<p>保存该文件，重启tomcat服务器，发现没有中文乱码了</p>
+<p><img src="/images/tomcat_gbk.png" alt="正常" title="问题解决"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>该问题的发生就是编码错误问题，系统默认的编码是gbk，而tomcat的日志输出的编码是utf-8,这样就会造成乱码。所以将日志输出的编码改为gbk后问题就解决了。</p>
 
       
     </div>
@@ -354,6 +379,35 @@
 	<div>
       
         
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2019/02/19/tomcat控制台编码/">tomcat控制台编码</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 人间很值得 的个人博客">人间很值得</a></p>
+  <p><span>发布时间:</span>2019年02月19日 - 21:24</p>
+  <p><span>最后更新:</span>2019年02月19日 - 21:56</p>
+  <p><span>原始链接:</span><a href="/2019/02/19/tomcat控制台编码/" title="tomcat控制台编码">https://yjthdtf123.github.io/2019/02/19/tomcat控制台编码/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://yjthdtf123.github.io/2019/02/19/tomcat控制台编码/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
+</div>
+<script>
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({
+          title: "",
+          text: '复制成功',
+          icon: "success",
+          showConfirmButton: true
+          });
+	});
+    });
+</script>
+
       
 	</div>
 	
@@ -372,6 +426,12 @@
 	</div>
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/problem/" rel="tag"><i class="fa fa-tag"></i> problem</a>
+          
+        </div>
+      
 
       
       
@@ -381,8 +441,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/04/markdown学习笔记/" rel="next" title="markdown基础语法学习">
-                <i class="fa fa-chevron-left"></i> markdown基础语法学习
+              <a href="/2019/02/05/nexT-Pisces文章主题修改/" rel="next" title="nexT Pisces文章主题修改">
+                <i class="fa fa-chevron-left"></i> nexT Pisces文章主题修改
               </a>
             
           </div>
@@ -390,10 +450,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/05/nexT-Pisces文章主题修改/" rel="prev" title="nexT Pisces文章主题修改">
-                nexT Pisces文章主题修改 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -525,7 +581,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#启动Tomcat控制台出现中文乱码"><span class="nav-number">1.</span> <span class="nav-text">启动Tomcat控制台出现中文乱码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方法"><span class="nav-number">1.2.</span> <span class="nav-text">解决方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
             
 
           </div>
