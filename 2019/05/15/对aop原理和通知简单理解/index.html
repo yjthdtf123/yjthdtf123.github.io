@@ -87,12 +87,12 @@
 <meta property="og:site_name" content="学习备忘录">
 <meta property="og:description" content="对AOP原理和通知类型的简单理解1  什么是AOP AOP全称为 Aspect-Oriented Programming,即面向切面编程。通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发效率。        通过上面概念性的描述，可以看出AOP有以下这几个优点：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="e:/QQ%E6%96%87%E6%A1%A3/739688759/FileRecv/MobileFile/image/tong.png">
-<meta property="og:updated_time" content="2019-05-15T13:17:17.230Z">
+<meta property="og:image" content="https://yjthdtf123.github.io/images/aop/advice.png">
+<meta property="og:updated_time" content="2019-05-15T13:27:18.169Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="对aop原理和通知类型简单理解">
 <meta name="twitter:description" content="对AOP原理和通知类型的简单理解1  什么是AOP AOP全称为 Aspect-Oriented Programming,即面向切面编程。通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发效率。        通过上面概念性的描述，可以看出AOP有以下这几个优点：">
-<meta name="twitter:image" content="e:/QQ%E6%96%87%E6%A1%A3/739688759/FileRecv/MobileFile/image/tong.png">
+<meta name="twitter:image" content="https://yjthdtf123.github.io/images/aop/advice.png">
 
 
 
@@ -390,7 +390,7 @@
 <li>最终通知 </li>
 <li>环绕通知  </li>
 </ol>
-<p>而我们可以使用自己动态代理的代理对象来类比这些通知类型，如下图所示：<br><img src="E:/QQ%E6%96%87%E6%A1%A3/739688759/FileRecv/MobileFile/image/tong.png" alt="类比AOP通知"></p>
+<p>而我们可以使用自己动态代理的代理对象来类比这些通知类型，如下图所示：<br><img src="/images/aop/advice.png" alt="类比AOP通知"></p>
 <h3 id="通知的执行顺序"><a href="#通知的执行顺序" class="headerlink" title="通知的执行顺序"></a>通知的执行顺序</h3><p>在真正执行method.invoke()方法之前的代码就是前置通知；在执行method.invoke()方法之后的代码是后置通知；在catch代码块中相当于异常通知；而finally代码块就相当于最终通知。<br>一般情况下，我们使用环绕通知外的四种类型通知。通过观察代码发现在方法执行的过程中，只会执行三种通知：<br>前置通知和最终通知是无论如何都会执行的，而后置通知和异常通知是只有一个会执行。即当method.invoke()方法正常执行后，执行后置通知；当method.invoke()方法出现异常后，就执行异常通知。  </p>
 <h3 id="环绕通知"><a href="#环绕通知" class="headerlink" title="环绕通知"></a>环绕通知</h3><p>而剩下的环绕通知，可以自定义的决定哪些代码在真正的方法执行前执行，哪些在之后执行。非常类似于我们的动态代理中实现的方法。 环绕通知的代码如下:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">txAround</span><span class="params">(ProceedingJoinPoint joinPoint)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"开启事务"</span>);</span><br><span class="line">    transactionManager.beginTransaction();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        Object obj = joinPoint.proceed(joinPoint.getArgs());</span><br><span class="line">        System.out.println(<span class="string">"提交事务"</span>);</span><br><span class="line">        transactionManager.commit();</span><br><span class="line">        <span class="keyword">return</span> obj;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Throwable throwable) &#123;</span><br><span class="line">        System.out.println(<span class="string">"回滚事务"</span>);</span><br><span class="line">        transactionManager.rollback();</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(throwable);</span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">"释放资源"</span>);</span><br><span class="line">        transactionManager.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -421,7 +421,7 @@
   <p><span>本文标题:</span><a href="/2019/05/15/对aop原理和通知简单理解/">对aop原理和通知类型简单理解</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 never stop learning 的个人博客">never stop learning</a></p>
   <p><span>发布时间:</span>2019年05月15日 - 21:11</p>
-  <p><span>最后更新:</span>2019年05月15日 - 21:17</p>
+  <p><span>最后更新:</span>2019年05月15日 - 21:27</p>
   <p><span>原始链接:</span><a href="/2019/05/15/对aop原理和通知简单理解/" title="对aop原理和通知类型简单理解">https://yjthdtf123.github.io/2019/05/15/对aop原理和通知简单理解/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://yjthdtf123.github.io/2019/05/15/对aop原理和通知简单理解/" aria-label="复制成功！"></i></span>
   </p>
